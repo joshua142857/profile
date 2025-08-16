@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import pfp from './assets/pfp.jpeg'
 import './App.css'
 
 function App() {
@@ -8,15 +7,18 @@ function App() {
 
   return (
     <>
+      <header>
+        <nav className="bg-white shadow-md p-4 flex justify-around">
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="/contact">Contact</a>
+        </nav>
+      </header>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <img src={pfp} className="pfp" alt="Profile Picture" />
+        <p>Hello! I'm Joshua Cheng, a software developer with a passion for creating innovative solutions and learning new technologies. Welcome to my personal website!</p>
       </div>
-      <h1>Vite + React</h1>
+      <hr></hr>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -28,6 +30,10 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <hr></hr>
+      <footer className="bg-white shadow-md p-4 text-center">
+        <p>&copy; 2025 Joshua Cheng. Built using Vite + React.</p>
+      </footer>
     </>
   )
 }

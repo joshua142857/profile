@@ -1,11 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  margin: 100 auto left;
   padding: 2rem;
   text-align: center;
 }
 
-.logo {
+.header {
+  background-color:white;
+}
+/* .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
@@ -16,6 +22,13 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+} */
+.pfp {
+  height: 24em;
+  width: 16em;
+  border-radius: 0%;
+  padding: 1.5em;
+  float: left;
 }
 
 @keyframes logo-spin {
